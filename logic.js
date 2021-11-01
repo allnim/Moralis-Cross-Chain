@@ -1,5 +1,5 @@
-const serverUrl = "YOUR SERVER URL HERE";
-const appId = "YOUR APP ID HERE";
+const serverUrl = "https://wsvywkyx3ozz.bigmoralis.com:2053/server";
+const appId = "6KyON5tcUac3a61pGSP94t6hewyqGUl5HNpGOXvY";
 Moralis.start({ serverUrl, appId });
 var web3;
 checkWeb3();
@@ -20,7 +20,7 @@ async function checkWeb3(){
         displayMessage("01", "This App Requires MetaMask, Please Install MetaMask");
     }
     else{
-        //displayMessage("00", "Metamask is Installed");
+        displayMessage("00", "Metamask is Installed");
         setWeb3Environment()
     }
 }
